@@ -15,17 +15,24 @@ public class cases2 {
 	@Given("user is on the login page")
 	public void user_is_on_the_login_page() {
 		driver.get("https://10.232.237.143/TestMeApp/fetchcat.htm");
-		driver.findElement(By.id("details-button")).click();
+		//driver.findElement(By.id("details-button")).click();
 
-		driver.findElement(By.id("proceed-link")).click();
+		//driver.findElement(By.id("proceed-link")).click();
 
-		driver.findElement(By.xpath("//a[@href='login.htm']")).click();
+		//driver.findElement(By.xpath("//a[@href='login.htm']")).click();
+		//driver.findElement(By.linkText("SignIn")).click();
 
 	}
 
 	@When("user enters {string} and {string}")
 	public void user_enters_and(String string, String string2) {
 		driver.get("https://10.232.237.143/TestMeApp/fetchcat.htm");
+		driver.findElement(By.id("details-button")).click();
+
+		driver.findElement(By.id("proceed-link")).click();
+
+		//driver.findElement(By.xpath("//a[@href='login.htm']")).click();
+		driver.findElement(By.linkText("SignIn")).click();
 		WebElement username=driver.findElement(By.name("userName"));
 		username.sendKeys(string);
 		WebElement password=driver.findElement(By.name("password"));

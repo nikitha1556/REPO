@@ -6,4 +6,4 @@ Feature: login into testme app
      
      Examples:
      | username | password |
-     | nikitha  | nikki    |
+     | Lalitha  | Password123    |

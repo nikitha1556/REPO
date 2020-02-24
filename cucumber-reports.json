@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-24T06:18:17.455Z",
+        "line": 9,
+        "name": "successful login",
+        "description": "",
+        "id": "login-into-testme-app;successful-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13678821700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is on the login page",
+            "match": {
+              "location": "cases2.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14783722100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters \"Lalitha\" and \"Password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lalitha\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Password123\"",
+                  "offset": 26
+                }
+              ],
+              "location": "cases2.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 300062500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user does succesful login",
+            "match": {
+              "location": "cases2.user_does_succesful_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login into testme app",
+    "description": "",
+    "id": "login-into-testme-app",
+    "keyword": "Feature",
+    "uri": "classpath:case2/login2.feature",
+    "tags": []
+  }
+]
